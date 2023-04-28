@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <h1>Student Enrollment System</h1>
+    <div class="container center">
+        <table>
+            <tr>
+                <td>
+                    <form class="input-part" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <br/>
+                            <label for="studentName">Student Name:</label>
+                            <input type="text" placeholder="Enter Student Name" name="studentName" id="studentName" required/>
+                        </div>
+                        <div>
+                            <br/>
+                            <label for="collegeName">College Name:</label>
+                            <input placeholder="Enter your College Name" type="text" name="collegeName" id="collegeName" required/>
+                        </div>
+                        <div>
+                            <br/>
+                            <label for="Email">Email:</label>
+                            <input placeholder="Enter your Email ID" type="email" name="Email" id="Email" required/>
+                        </div>
+                        <div>
+                            <br/>
+                            <label for="Gender">Gender: &nbsp;</label> 
+                            <input type="radio" name="Gender" id="M" value="Male" required>Male</input>
+                            <input type="radio" name="Gender" id="F" value="Female">Female</input>
+                        </div>
+                         <div>
+                            <br/>
+                             <label for="dob">Date of birth:</label>
+                             <input placeholder="Enter atleast one of your Skills" type="date" name="dob" id="dob" required/>
+                         </div>
+                        <div class="form-btns">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+
+                <td>
+                    <table class="list" id="storeList" hidden="hidden">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>College Name</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>DOB</th>
+                                <th>Edit/Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </td>
+            </tr>
+        </table>
+        <script src="home.js" defer> </script>
+
+    </div>
+</body>
+</html>
